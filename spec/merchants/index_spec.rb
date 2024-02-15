@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'Merchants Index' do
     before(:each) do
-        merchant_1 = Merchant.new(name: "Steve")
-        merchant_2 = Merchant.new(name: "Bob")
-        merchant_3 = Merchant.new(name: "Jeff")
-        merchant_4 = Merchant.new(name: "Alex")
+        merchant_1 = Merchant.create(name: "Steve")
+        merchant_2 = Merchant.create(name: "Bob")
+        merchant_3 = Merchant.create(name: "Jeff")
+        merchant_4 = Merchant.create(name: "Alex")
     end 
 
     it "Merchants Index" do
